@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- main style -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Bookmark</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="mx-auto my-5">Bookmarker</h1>
+        <div class="line"></div>
+      </header>
+      <main>
+        <section
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <h2 class="my-3">
+            <i class="fa-solid fa-bookmark fa-sm"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark fa-sm"></i>
+          </h2>
+          <div class="my-3 w-100">
+            <label for="siteName" class="pb-2"
+              ><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="siteName"
+              placeholder="Bookmark Name"
+            />
+          </div>
+          <div class="my-3 w-100">
+            <label for="siteUrl" class="pb-2"
+              ><i class="fa-solid fa-link pe-2"></i>Site URL</label
+            >
+            <input
+              type="url"
+              class="form-control"
+              id="siteUrl"
+              placeholder="Website URL"
+            />
+          </div>
+          <button class="btn btn-secondary px-5 my-3" onclick="addSite()">Submit</button>
+          <div class="line w-100"></div>
+        </section>
+        <section>
+          <table class="table mt-3">
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

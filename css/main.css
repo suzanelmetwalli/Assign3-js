@@ -1,0 +1,47 @@
+:root {
+  --main-duration: 0.3s;
+}
+body {
+  background-color: #f7ecde;
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  font-weight: 500;
+  position: relative;
+  width: fit-content;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  height: 20px;
+  width: 100%;
+  background-color: #fec260;
+  z-index: -1;
+  transition: var(--main-duration);
+}
+h1:hover::after {
+  height: 40px;
+}
+.line {
+  margin: 10px 0;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, black 0 3px, #0000 0 7px);
+}
+main {
+  font-family: "PT Sans Caption", sans-serif;
+}
+h2 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+label {
+  font-weight: 600;
+}
